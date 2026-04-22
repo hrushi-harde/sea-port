@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const dataPath = join(__dirname, "../data/port.json");
+const dataPath = join(__dirname, "../data/ports.json");
 let ports = JSON.parse(readFileSync(dataPath, 'utf8'));
 
 const ok = (res,data,status=200)=>{
